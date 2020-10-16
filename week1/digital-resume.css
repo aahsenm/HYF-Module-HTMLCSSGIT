@@ -1,0 +1,164 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+html {
+    background-image: url(images/fire.jpg);   
+}
+#cv {
+    margin: 75px;
+    padding: 75px;
+}
+#slider {
+	overflow: hidden;
+    max-width: 100%;
+    height: 500px;
+    margin-bottom: 100px;
+    background-color: whitesmoke;
+    padding-top: 80px;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s slider infinite;
+}
+
+#slider figure li {
+	float: left;
+    width: 20%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    list-style-type: none;
+    color: rgb(84, 107, 84);
+}
+
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+#content {
+    padding: 5px;
+	background-color: whitesmoke;
+	display: flex;
+}
+
+.first-coloumn {
+    display: block;
+    position: relative;
+    margin: 2% 2% 2% 2%;
+    width: 30%;
+	height: 100%;
+	background-color: #d9e4dd;
+	padding: 10px;
+}
+.image-of-me {
+  	width: 150px;
+  	height: 150px;
+  	border-radius: 9999px;
+  	overflow: hidden;
+  	position: relative;
+	margin-bottom: 10px;
+	margin-left: 50px; 
+  	box-shadow: 0 5px 30px #00000029;
+}
+
+.image-of-me img {
+  	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  	object-position: center;
+	user-select: none;
+	  
+}
+
+.name {
+	font-family: 'PT Serif', serif;
+	font-size: 15px;
+	color: rgb(84, 107, 84);
+	text-align: justify;
+}
+
+.name h2 h3 {
+	font-weight: bold;
+}
+
+.name h2 {
+	font-size: 25px;
+	
+}
+.check img {
+	width: 300px;
+	height: 150px;
+}
+
+.check img:hover {
+	opacity: 0.5;
+}
+
+.second-coloumn {
+	display: block;
+    position: relative;
+    margin: 2% 2% 2% 2%;
+    width: 70%;
+	height: 100%;
+	padding: 10px;
+	color: rgb(84, 107, 84);
+	font-family: 'PT Serif', serif;
+}
+
+.title {
+	color: rgb(84, 107, 84);
+	text-align: left;
+	font-size: 20px;
+	margin-bottom: 10px;
+	font-weight: bold;
+  }
+
+  .info {
+	width: 40%;
+	float: left;
+	text-align: left;
+	padding-right: 5%;
+	margin-bottom: 20px;
+  }
+
+  .description {
+	width: 70%;
+	float: left;
+	text-align: left;
+	padding-right: 5%;
+	margin-bottom: 20px;
+  }
+ 
+  .second-coloumn h3 {
+	font-size: 25px;
+  }
+  
