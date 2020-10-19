@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1) How do I create a hidden file or folder? How do I display it in the CLI?
+
+        To create a hidden file or folder we should use mkdir command. In addition, after mkdir command we should write the name of folder. However, we should write . before the name of file or order to create a hidden file or folder.
+        
+        For example, when we create a hidden folder which name is hiddenfolder, the command will be below:
+        
+        mkdir .hiddenfolder 
+        
+        Also for the second question, with ls -a command we can list hidden files or folders. If we use ls la command, the list will be detailed list.  
+    </p>
+    <p>
+        2) How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+        
+        To create multiple nested directories, we should use this command:'mkdir -p' In this command, mkdir refers to create a file and -p refers to the path. For instance, if we want to create multiple nested directories like in the question above, we should use this command:
+        mkdir -p /c/Users/myusername/these/folders/are/just/for/fun
+    </p>
+    <p>
+        3)How do I append a message to a file, without a newline character?
+        
+        
+        I should use 'echo -e 'line1 \nline2 \nline3' >> file-name' 
+        
+        In this command, echo displays the string.  \n refers to newline with backspace interpretor. -e treats new line from where it used. And >> takes to output of the command on the left' then appends it to the file on the right. 
+        
+        If we do the example that you gave us, we can should write this command:
+        
+        echo -e `first message \nsecond message' >> File 
+    </p>
+</body>
+</html>
