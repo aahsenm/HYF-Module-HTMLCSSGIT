@@ -1,0 +1,422 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+
+
+/* First approach Desktop */
+
+/* I reset the margin and padding so that there is no different view in each browsers */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*  After feedback of the assignment of week-1, I tried to edit multiple elements with a single code.
+    In the other words, I tried to follow DRY principle!
+
+    Also, in my previous project you mentined that heading elements should be defined as top-level styles 
+    and not scoped to particular areas of the page. In this project I defined them at the top-level
+*/
+
+body {
+    background-color: rgb(61, 65, 78);
+    color: rgb(61, 65, 78);
+    font-family: 'Cabin', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: rgb(240, 252, 240);
+    padding-top: 550px;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 40px;
+    color: rgb(61, 65, 78);
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-bottom: 2px solid rgb(61, 65, 78);
+}
+
+h3 {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 2px;
+    color:rgb(61, 65, 78);
+    vertical-align: middle;
+    
+    /* I took the code of box-shadow -with little changes- from this website:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow*/
+    
+    box-shadow: 
+    inset 0 -3em 3em rgba(0,0,0,0.1), 
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+header {
+    background-image: url(images/ornek7.jpg);
+    max-width: 100%;
+    height: 800px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    float: left;
+    
+}
+
+section {
+    background-color: #e7e2dd;
+    max-width: 1100px;
+    float: left;
+    position: relative;
+    margin-left: 150px;
+}
+
+section ul {
+    display: inline-block;
+    padding: 0;
+    width: 100%;
+    
+}
+
+section ul li{
+    height: 500px;
+}
+
+/*Grid Floats Start*/
+
+#grid-floats {
+    float: left;
+    max-width: 100%;
+}
+
+#grid-floats .grid-item {
+    list-style: none;
+    float: left;
+    width: 20%;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    margin-left: 43px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#grid-floats .grid-item:hover {
+    background-color:rgba(192,192,192,0.3);
+}
+
+#grid-floats .grid-item:nth-child(1) {
+    width: 44.3%;
+    box-sizing: border-box;
+}
+
+#grid-floats .grid-item img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    transition: transform .2s;
+}
+
+/*  I found this code for hover effects which are webkit animation and animation with keyframes from this link:
+    https://codepen.io/nxworld/pen/ZYNOBZ
+    However, I made some changes in this code*/
+
+#grid-floats .grid-item img:hover {
+    opacity: 15;
+	-webkit-animation: flash 3s;
+    animation: flash 3s;
+    transform: scale(1.3);
+    border-radius: 5px;
+}
+
+#grid-floats .grid-item:nth-child(1):hover {
+    transform: scale(1);
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+    }
+    
+    50% {
+        opacity: 2;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+    }
+    50% {
+        opacity: 2;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+#grid-floats .grid-item p {
+    width: 100 %;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Grid with Flexbox start*/
+
+#grid-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#grid-flex .grid-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 0 1 auto;
+    width: 18%; 
+    margin: 5px;
+    padding: 10px;
+    height: 500px;
+    background-color: white;
+    margin-left: 43px;
+    border-radius: 5px;
+}
+
+#grid-flex .grid-item:hover {
+    background-color:rgba(192,192,192,0.3);
+}
+
+#grid-flex .grid-item:nth-child(1) {
+    width: 44.3%;
+    box-sizing: border-box;
+    height: 518px;
+}
+
+#grid-flex .grid-item img {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+    transition: transform .2s;
+}
+
+#grid-flex .grid-item img:hover {
+    opacity: 15;
+	-webkit-animation: flash 3s;
+    animation: flash 3s;
+    transform: scale(1.3);
+    border-radius: 5px;
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+    }
+    
+    50% {
+        opacity: 2;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+    }
+    50% {
+        opacity: 2;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+
+#grid-flex .grid-item p {
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/* ---Mobile Styles---- */
+
+/* Float Section */
+
+@media only screen and (max-width: 600px) {
+
+
+    main {
+        padding: 3%;
+        position: relative;
+        margin-left: -100px;
+    }
+        
+    h1 {
+        font-size: 32px;
+    }
+      
+    h2 {
+        font-size: 24px;
+    }
+      
+    h3 {
+      font-size: 20px;
+      text-align: center;
+    }
+      
+    #grid-floats .grid-item {
+        width: 100%;
+        height: 500px;
+        margin-left: 0%;
+        margin-bottom: 5%;
+    }
+    #grid-floats .grid-item:nth-child(1) {
+        width: 100%;
+    }
+
+    #grid-floats .grid-item p {
+        width: 90%;
+        padding: 5%;
+    }
+
+    img{
+        width: 80%;
+        background-color: white;
+        
+    }
+
+    img:hover{
+        opacity: 15;
+	    -webkit-animation: flash 3s;
+        animation: flash 3s;
+        transform: scale(1.3);
+        border-radius: 5px;
+    }
+
+    @-webkit-keyframes flash {
+	    0% {
+		    opacity: .4;
+        }
+    
+        50% {
+            opacity: 2;
+        }
+	    100% {
+		    opacity: 1;
+	    }   
+    }
+    @keyframes flash {
+	    0% {
+		    opacity: .4;
+        }
+        50% {
+            opacity: 2;
+        }
+	    100% {
+		    opacity: 1;
+	    }
+    }   
+  
+
+    /*Flexbox Section*/
+
+
+    #grid-flex .grid-item {
+        width: 100%;
+        height: 500px;
+    }
+
+    #grid-flex .grid-item:nth-child(-n+2){
+        width: 100%;
+    }
+
+    
+    #grid-flex .grid-item {
+        width: 100%;
+        height: 500px;
+    }
+  
+    #grid-flex .grid-item:nth-child(-n+2){
+        width: 100%;
+    }
+}
+
+/* Tablet Styles */
+
+/* Float Section*/
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+    main {
+        padding: 3%;
+        position: relative;
+        margin-left: -100px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    #grid-floats .grid-item {
+       height: 650px;
+       margin: 5%;
+    }
+
+    img {
+        width: 150%;
+        background-color: white;
+        margin: auto;
+        padding: auto;
+    }
+
+    #grid-floats .grid-item:nth-child(1) {
+        width: 50%;
+    }
+
+    #grid-floats .grid-item:nth-child(2) {
+        width: 20%;
+    }
+}
+
+/* Flexbox Section*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+
+#grid-flex .grid-item {
+    height: 500px;
+    margin: 5%;
+ }
+
+ #grid-flex .grid-item:nth-child(1) {
+     width: 50%;
+ }
+
+ #grid-flex .grid-item:nth-child(2) {
+     width: 20%;
+ }
+
+ #grid-flex .grid-item img {
+     margin-top: 0px;
+     margin-bottom: 0px;
+
+ }
+
+}
