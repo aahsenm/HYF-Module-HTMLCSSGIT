@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <title>Goodreads | Meet your next favorite book</title>
+</head>
+<body>
+    <main>
+    <div class="header">
+        <nav class="naw-wrapper">
+            <div class="container">
+            <div class="head-container">
+                <a href="https://www.goodreads.com/"><img src="images/1.png" alt="logo of the Goodreads"></a>
+                <div class="formbox">
+                    <input id="userSignInFormEmail" class="browser-default"
+                    type="email" name="user[email]" aria-label="Email address" placeholder="Email address">
+                    <input id="user_password" value=""class="browser-default" aria-label="Password" placeholder="Password" type="password" name="user[password]" >
+                    <a href="https://www.goodreads.com/" class="btn-small">Sign in</a>
+                    <div class="sub-text">
+                        <input type="checkbox" id="checkbox" name="checkbox" checked value="checkbox" class="browser-default"> 
+                        <label for="checkbox"> Remember me</label>
+                        <a href="https://www.goodreads.com/" class="forget-text">Forgot it?</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div class="header-text">See the nominees chosen by our community of readers</div>
+        <div class="card">
+            <div class="card-content">
+                <h2>New here? Create a free account!</h2>
+                
+                <input id="form-name" class="browser-default"
+                    type="email" name="user[email]" aria-label="Email address" placeholder="Name">
+                <input id="form-email" value=""class="browser-default" aria-label="Password" placeholder="Email address" type="password" name="user[password]" >
+                <input id="form-password" value=""class="browser-default" aria-label="Password" placeholder="Password" type="password" name="user[password]" >
+                <a href="https://www.goodreads.com/" class="btn-small" id="btn-signup">Sign up</a>
+                <div class="signup-text">
+                    By clicking “Sign up”
+                    I agree to the Goodreads Terms of Service and confirm that I am at least 13 years old.
+                  </div>
+            </div>
+        </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row" >
+            <div class="col s8" id="left-first">
+                <h2>12th Annual Goodreads Choice Awards</h2>
+                <p class="text-left-first">The choice is yours. Vote in the only major book awards decided by readers.
+                    See the nominees</p>
+                <a class="btn-small" id="btn-nominee">See the nominees</a> <br> <br>
+                <div class="col s4" id="left-first-list-left"> 
+                    <a href="https://www.goodreads.com/choiceawards/best-fiction-books-2020?int=gca_signed_out_hp"> Best Fiction </a> <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-romance-books-2020?int=gca_signed_out_hp">Best Romance </a> <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-science-fiction-books-2020?int=gca_signed_out_hp">Best Science Fiction</a>  <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-mystery-thriller-books-2020?int=gca_signed_out_hp">Best Mystery & Thriller</a>  <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-nonfiction-books-2020?int=gca_signed_out_hp">Best Nonfiction</a> 
+                </div>
+                <div class="col s4" id="left-first-list-right">
+                    <a href="https://www.goodreads.com/choiceawards/best-humor-books-2020?int=gca_signed_out_hp">Best Humor </a> <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-fantasy-books-2020?int=gca_signed_out_hp">Best Fantasy</a>  <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-young-adult-fiction-books-2020?int=gca_signed_out_hp">Best Young Adult Fiction</a>  <br>
+                    <a href="https://www.goodreads.com/choiceawards/best-historical-fiction-books-2020?int=gca_signed_out_hp">Best Historical Fiction</a> 
+                </div>
+            </div>
+             <div class="col s4" id="right-first">
+                <h3>News & Interviews</h3>
+                <a href="https://www.goodreads.com/blog/show/1956-november-s-most-anticipated-young-adult-reads?int=Soapbox_Signed_Out_2020_Nov&int_sub=Blog_1956">November's Most Anticipated Young Adult Reads
+                    <img src="images/3.jpg" alt="November's Most Anticipated Young Adult Reads">
+                </a>
+                <span>12 likes</span>
+                <span> · </span>
+                <span>2 comments</span>
+             </div>
+        </div>
+        <div class="row">
+                <div class="col s4" id="left-second-one">
+                    <h2>Deciding what to read next?</h2>
+                    <p>
+                        You’re in the right place. Tell us what titles or genres you’ve enjoyed in the past, and we’ll give you surprisingly insightful recommendations.
+                    </p>
+                </div>
+                <div class="col s4" id="left-second-two">
+                    <h2>What are your friends reading?</h2>
+                    <p>
+                        Chances are your friends are discussing their favorite
+                        (and least favorite) books on Goodreads.
+                      </p>
+                </div>
+        </div>
+        <div class="row">
+            <div class="col s8" id="left-third">
+                <h2>What will you discover?</h2>
+                <div class="sourcebooks">
+                    <p>Because Shomeret liked...</p>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/4.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/5.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/6.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/7.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="" >
+                        <img src="images/forward.png" alt="">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/3273.Moloka_i">
+                        <img src="images/8.jpg" alt="">
+                    </a>
+                </div>
+                <div class="sourcebooks">
+                    <p>Because Deborah liked...</p>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/9.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/10.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/11.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/7366.Animals_in_Translation">
+                        <img src="images/12.jpg" alt="Animals in Translation by Temple Grandin">
+                    </a>
+                    <a href="" >
+                        <img src="images/forward.png" alt="">
+                    </a>
+                    <a href="https://www.goodreads.com/book/show/3273.Moloka_i">
+                        <img src="images/13.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s8" id="left-fourth">
+                <h2>Goodreads Choice Awards: The Best Books 2020</h2>
+                <div class="choicelogo">
+                    <a href="https://www.goodreads.com/choiceawards/best-books-2020">
+                    <img src="https://s.gr-assets.com/assets/award/2020/choice-logo-medium-4fa9e062c61bfe68f2721c26d45b12fe.png" alt="">
+                    </a>
+                </div>
+                <div class="list-of-books">
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Books 2020</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Fiction</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Mystery & Thriller</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Historical Fiction</a>
+                    </li>
+                    <li class="list"> 
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Fantasy</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Romance</a>
+                    </li>
+                    <li class="list"> 
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Science Fiction</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Horror</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Humor</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Nonfiction</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Memoir & Autobiography</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best History & Biography</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Science & Technology</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Food & Cookbooks</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Graphic Novels</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Poetry</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Debut Novel</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Young Adult Fiction</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Young Adult Fantasy</a>
+                    </li>
+                    <li class="list">
+                        <a href="https://www.goodreads.com/choiceawards/best-books-2020">Best Picture Books</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-left">
+                    <div class="col s3">
+                        <h5>COMPANY</h5>
+                        <ul>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">About us</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Careers</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Terms</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Interest Based Ads</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Ad preferences</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Help</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s3">
+                        <h5>WORK WITH US</h5>
+                        <ul>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Authors</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Advertise</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">Authors & ads blog</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/about/us">API</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col s3">
+                        <h5>CONNECT</h5>
+                        <div class="col s2" id="face-twit">
+                            <a href="https://www.facebook.com/Goodreads/" class="soc-icon">
+                                <img src="https://s.gr-assets.com/assets/site_footer/footer_facebook-ea4ab848f8e86c5f5c98311bc9495a1b.svg" alt="">
+                            </a>
+                            <a href="https://twitter.com/goodreads" class="soc-icon">
+                                <img src="https://s.gr-assets.com/assets/site_footer/footer_twitter-126b3ee80481a763f7fccb06ca03053c.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col s2" id="inst-in">
+                            <a href="https://www.instagram.com/goodreads/" class="soc-icon"> 
+                                <img src="https://s.gr-assets.com/assets/site_footer/footer_instagram-d59e3887020f12bcdb12e6c539579d85.svg" alt="">
+                            </a>
+                            <a href="https://www.linkedin.com/company/goodreads-com/" class="soc-icon">
+                                <img src="https://s.gr-assets.com/assets/site_footer/footer_linkedin-5b820f4703eff965672594ef4d10e33c.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right">
+                        <div class="col s2">
+                            <a href="https://itunes.apple.com/app/apple-store/id355833469?pt=325668&ct=mw_footer&mt=8">
+                                <img src="https://s.gr-assets.com/assets/app/badge-ios-desktop-homepage-6ac7ae16eabce57f6c855361656a7540.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="col s2">
+                            <a href="https://play.google.com/store/apps/details?id=com.goodreads&utm_source=mw_footer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">
+                                <img src="https://s.gr-assets.com/assets/app/badge-android-desktop-home-0f517cbae4d56c88a128d27a7bea1118.png" alt="">
+                            </a>
+                        </div>
+                    <div class="col s2">
+                       <span> © 2020 Goodreads, Inc.
+                        Mobile version</span>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </footer>      
+</body>
+</html>
