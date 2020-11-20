@@ -31,7 +31,6 @@ a {
     background-color: #32362D;
     color: #181818;
     height: 370px;
-    min-width: 970px;
 }
 
 .naw-wrapper {
@@ -107,7 +106,7 @@ a {
     position: relative;
     display: block;
     height: 295px;
-    width: 312px;
+    max-width: 50%;
     bottom: 87px;
     left: 900px;
     background-color: #f4f2e9
@@ -212,7 +211,8 @@ a {
 }
 
 #right-first img {
-    max-width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 #right-first span {
@@ -241,6 +241,7 @@ a {
     border-radius: 10px;
     padding: 15px 0 20px 0;
     background-color: #f4f2e9;
+    max-width: 100%;
 }
 
 #left-third h2{ 
@@ -258,7 +259,9 @@ a {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAoCAYAAAA%2FtpB3AAAAOElEQVQIW2M6uG%2FlfyZGRkYGdIIBCKAsRgYMWXSCAU5gUYzVAAaELA5tCHUQAxjQZIFir16%2FhXAByw8GmnhQCm8AAAAASUVORK5CYII%3D);
     clear: both;
     margin-top: 20px;
-    height: 170px;
+    max-height: 100%;
+    max-width: 100%;
+
     background-position: bottom;
     background-repeat: repeat-x;
 }
@@ -306,6 +309,7 @@ a {
     padding: 10px 20px 0px 0px;
     text-decoration: none;
 }
+
 
 .list-of-books {
     color: #333333;
@@ -388,4 +392,100 @@ a {
     line-height: 1.5;
     color: #382110;
     font-size: 14px;    
+}
+
+@media (max-width: 1200px) {
+    .card {
+        display: none;
+    }
+
+    #right-first {
+        padding-left: 20px;
+    }
+
+    input[type=text], #userSignInFormEmail, #user_password, #checkbox, .btn-small, .forget-text {
+        display: none;
+        
+    }
+    #btn-nominee {
+        margin: auto; 
+    }
+
+    .header {
+        width: 100%;
+        background-size: 100%;
+        height: 250px;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .naw-wrapper, .head-container {
+        width: 100%;
+    }
+    body, footer {
+        text-align: center;
+    }
+    #left-first h2, #right-first h3, #left-third h2, #left-fourth h2{
+        font-size: 28px;
+    }
+    .footer-right {
+        display: none;
+    }
+
+    #left-first-list-left, #left-first-list-right {
+        margin-left: 30%;
+    }
+ 
+    
+}
+
+@media (max-width: 600px) {
+  
+    .card {
+        display: none;
+    }
+
+    #right-first {
+        padding-left: 0px;
+    }
+
+    input[type=text], #userSignInFormEmail, #user_password, #checkbox, .btn-small, .forget-text {
+        display: none;
+        
+    }
+    #btn-nominee {
+        margin: auto; 
+    }
+
+    .header {
+        width: 100%;
+        background-size: 100%;
+        height: 200px;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .naw-wrapper, .head-container {
+        width: 100%;
+    }
+
+    #left-first h2, #right-first h3, #left-third h2, #left-fourth h2{
+        font-size: 28px;
+    }
+
+    .footer-right {
+        display: none;
+    }
+
+    #left-first-list-left, #left-first-list-right {
+        margin-left: 30%;
+    }
+    
+    #left-second-one, #left-second-two {
+        margin-left: 30%
+    }
 }
